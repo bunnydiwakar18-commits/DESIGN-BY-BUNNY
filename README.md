@@ -226,17 +226,9 @@ Possible future improvements include:
 
 ## 📸 Preview
 
-Add your project screenshot to the repository as:
-
-```text
-screenshot.png
-```
-
-Then display it in this README using:
-
-```markdown
 ![Login & Sign Up Card Preview](screenshot.png)
-```
+
+---
 
 ---
 
