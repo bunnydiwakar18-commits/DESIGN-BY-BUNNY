@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Login &amp; Sign Up Card</title>
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="path/to/your/favicon.ico">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- Background Ambient Dot Grid -->
+  <div class="bg-dot-pattern"></div>
+  <div class="bg-glow-sphere"></div>
+
+  <!-- Main Split Auth Card -->
+  <div class="auth-card-container">
+
+    <!-- ================= 1. LEFT PANEL: GRAPHICAL SPEED WAVES & HELLO ================= -->
+    <div class="card-left-panel">
+
+      <!-- Embedded SVG: Dynamic Diagonal Speed Streaks & Fluid Caustic Wave -->
+      <svg class="graphic-overlay" viewBox="0 0 500 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!-- Speed Light Streaks Gradient -->
+          <linearGradient id="beamGrad1" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+            <stop offset="40%" stop-color="#38bdf8" stop-opacity="0.5" />
+            <stop offset="100%" stop-color="#0052d4" stop-opacity="0" />
+          </linearGradient>
+
+          <linearGradient id="beamGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.7" />
+            <stop offset="60%" stop-color="#2563eb" stop-opacity="0.2" />
+            <stop offset="100%" stop-color="#0052d4" stop-opacity="0" />
+          </linearGradient>
+
+          <!-- Bottom Left Fluid Ribbon Wave Gradient -->
+          <linearGradient id="bottomWaveGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#0035a8" />
+            <stop offset="40%" stop-color="#0066ff" />
+            <stop offset="85%" stop-color="#38bdf8" />
+            <stop offset="100%" stop-color="#ffffff" />
+          </linearGradient>
+        </defs>
+
+        <!-- Diagonal Speed Beams (Matching reference screenshot) -->
+        <line x1="280" y1="0" x2="60" y2="400" stroke="url(#beamGrad1)" stroke-width="2.5" />
+        <line x1="380" y1="20" x2="130" y2="460" stroke="url(#beamGrad1)" stroke-width="1.8" />
+        <line x1="450" y1="60" x2="200" y2="520" stroke="url(#beamGrad2)" stroke-width="2.2" />
+        <line x1="490" y1="140" x2="260" y2="560" stroke="url(#beamGrad1)" stroke-width="3" />
+        <line x1="500" y1="220" x2="310" y2="590" stroke="url(#beamGrad2)" stroke-width="1.5" />
+
+        <!-- Fainter background parallel streaks -->
+        <line x1="200" y1="0" x2="20" y2="340" stroke="url(#beamGrad2)" stroke-width="1" stroke-dasharray="8 6" />
+        <line x1="330" y1="0" x2="100" y2="420" stroke="url(#beamGrad1)" stroke-width="1.2" />
+        <line x1="420" y1="80" x2="220" y2="450" stroke="url(#beamGrad2)" stroke-width="1.6" />
+        <line x1="500" y1="310" x2="360" y2="580" stroke="url(#beamGrad1)" stroke-width="2" />
+
+        <!-- Subtle ambient star sparks -->
+        <circle cx="90" cy="380" r="1.5" fill="#ffffff" opacity="0.8" />
+        <circle cx="210" cy="480" r="2" fill="#ffffff" opacity="0.9" />
+        <circle cx="340" cy="540" r="1.5" fill="#ffffff" opacity="0.7" />
+        <circle cx="70" cy="180" r="1.5" fill="#ffffff" opacity="0.5" />
+
+        <!-- Bottom Left Curved 3D Fluid Wave Ribbon -->
+        <path d="M -20 620 
+                 C 30 520, 90 480, 160 520 
+                 C 200 540, 220 580, 250 620 
+                 Z" fill="url(#bottomWaveGrad)" opacity="0.85" />
+        <path d="M -30 610 C 20 490, 80 470, 140 510 C 180 540, 210 590, 230 630" stroke="#67e8f9" stroke-width="3"
+          fill="none" opacity="0.75" />
+      </svg>
+
+      <!-- Brand Logo at Top -->
+      <div class="brand-logo-wrap">
+        <div class="brand-logo-icon" aria-hidden="true">
+          <div class="logo-dot-sub"></div>
+          <div class="logo-dot-main"></div>
+        </div>
+        <div class="brand-logo-text">
+          <span>YOUR</span>
+          <span>LOGO</span>
+        </div>
+      </div>
+
+      <!-- Hero Heading & Text -->
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Hello,<br>welcome!
+        </h1>
+        <p class="hero-subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi risus.
+        </p>
+        <a href="#view-more" class="btn-view-more" id="btnViewMore">
+          View more
+        </a>
+      </div>
+
+      <!-- Empty footer spacer to balance flexbox layout -->
+      <div style="height: 10px;"></div>
+    </div>
+
+    <!-- ================= 2. RIGHT PANEL: CLEAN WHITE LOGIN FORM ================= -->
+    <div class="card-right-panel">
+
+      <form id="authForm" onsubmit="handleFormSubmit(event)">
+
+        <!-- Input 1: Email Address -->
+        <div class="auth-input-group">
+          <div class="input-card-box">
+            <div class="input-icon-badge" aria-hidden="true">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div class="input-content">
+              <label for="emailField">Email address</label>
+              <input type="email" id="emailField" value="name@mail.com" placeholder="name@mail.com" required
+                autocomplete="email" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Input 2: Password -->
+        <div class="auth-input-group">
+          <div class="input-card-box">
+            <div class="input-icon-badge" aria-hidden="true">
+              <i class="bi bi-lock"></i>
+            </div>
+            <div class="input-content">
+              <label for="passwordField">Password</label>
+              <input type="password" id="passwordField" value="••••••••••••••" class="password-input" required
+                autocomplete="current-password" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Options: Remember Me & Forgot Password -->
+        <div class="options-row">
+          <label class="remember-wrap">
+            <input type="checkbox" id="rememberCheck" checked />
+            <span>Remember me</span>
+          </label>
+          <a href="#forgot" class="forgot-link" id="linkForgot">Forgot password?</a>
+        </div>
+
+        <!-- Button 1: Login (White Raised Card) -->
+        <button type="submit" class="btn-login-white" id="btnLogin">
+          Login
+        </button>
+
+        <!-- Divider Section: Not a member yet? -->
+        <div class="signup-section">
+          <span class="signup-label">Not a member yet?</span>
+          <!-- Button 2: Sign Up (Rich Blue Gradient) -->
+          <button type="button" class="btn-signup-grad" id="btnSignup">
+            Sign up
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- Feedback Toast Notification -->
+  <div class="custom-toast" id="feedbackToast">
+    <i class="bi bi-check-circle-fill me-2 text-info"></i>
+    <span id="toastText">Welcome back!</span>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Interactive JavaScript -->
+
+</body>
+
+</html>
